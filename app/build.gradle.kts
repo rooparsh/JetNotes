@@ -3,6 +3,7 @@ plugins {
     id(DependencyConfig.Plugin.KOTLIN_ANDROID)
     id(DependencyConfig.Plugin.KOTLIN_KAPT)
     id(DependencyConfig.Plugin.ANDROID_HILT)
+    id(DependencyConfig.Plugin.KOTLIN_PARCELIZE)
     id("scabbard.gradle") version "0.4.0"
 }
 
@@ -53,6 +54,7 @@ dependencies {
     implementation(project(":domain"))
     implementation(DependencyManager.appLibraries)
     kapt(DependencyManager.compilerLibraries)
+    kapt(DependencyConfig.Google.Di.androidHiltCompiler)
     testImplementation(DependencyManager.testLibraries)
     androidTestImplementation(DependencyManager.androidTestLibraries)
 }

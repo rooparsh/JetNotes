@@ -6,5 +6,5 @@ dependencyResolutionManagement {
         jcenter() // Warning: this repository is going to shut down soon
     }
 }
-rootProject.name = "BaseCompose"
+rootProject.name = "JetNotes"
 include(":app", ":data", ":domain")

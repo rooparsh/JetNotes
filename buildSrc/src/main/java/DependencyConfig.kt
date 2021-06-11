@@ -18,12 +18,15 @@ object DependencyConfig {
             "androidx.compose.ui:ui-tooling:${Version.AppConfig.Android.COMPOSE}"
         private const val ACTIVITY =
             "androidx.activity:activity-compose:${Version.AppConfig.Android.ACTIVITY_COMPOSE}"
+        private const val RUNTIME =
+            "androidx.compose.runtime:runtime:${Version.AppConfig.Android.COMPOSE}"
 
         val list = arrayListOf<String>().apply {
             add(UI)
             add(MATERIAL)
             add(TOOLING)
             add(ACTIVITY)
+            add(RUNTIME)
         }
     }
 
@@ -35,12 +38,17 @@ object DependencyConfig {
             "androidx.lifecycle:lifecycle-runtime-ktx:${Version.AppConfig.Android.LIFECYCLE_KTX}"
         private const val VIEW_MODEL =
             "androidx.lifecycle:lifecycle-viewmodel-ktx:${Version.AppConfig.Android.LIFECYCLE_KTX}"
-
+        private const val NAVIGATION_COMPOSE =
+            "androidx.navigation:navigation-compose:${Version.AppConfig.Android.NAVIGATION_COMPOSE}"
+        private const val HILT_NAVIGATION_COMPOSE =
+            "androidx.hilt:hilt-navigation-compose:${Version.AppConfig.Android.HILT_NAVIGATION_COMPOSE}"
         val list = arrayListOf<String>().apply {
             add(CORE)
             add(APP_COMPAT)
             add(LIFE_CYCLE_KTX)
             add(VIEW_MODEL)
+            add(NAVIGATION_COMPOSE)
+            add(HILT_NAVIGATION_COMPOSE)
         }
     }
 
@@ -49,21 +57,42 @@ object DependencyConfig {
             "com.google.android.material:material:${Version.AppConfig.Android.MATERIAL}"
 
         object Di {
-            private const val HILT = "com.google.dagger:hilt-android:${Version.Project.DAGGER_HILT}"
+            private const val HILT =
+                "com.google.dagger:hilt-android:${Version.Project.DAGGER_HILT}"
             private const val HILT_COMPILER =
                 "com.google.dagger:hilt-android-compiler:${Version.Project.DAGGER_HILT}"
+            private const val ANDROIDX_HILT_COMPILER =
+                "androidx.hilt:hilt-compiler:${Version.AppConfig.Android.ANDROIDX_HILT_COMPILER}"
 
             val list = arrayListOf<String>().apply {
                 add(HILT)
             }
+
+            val androidHiltCompiler = arrayListOf<String>().apply { add(ANDROIDX_HILT_COMPILER) }
 
             val compilerList = arrayListOf<String>().apply {
                 add(HILT_COMPILER)
             }
         }
 
+        object Accompanist {
+            private const val INSETS =
+                "com.google.accompanist:accompanist-insets:${Version.AppConfig.Android.ACCOMPANIST}"
+            private const val COIL =
+                "com.google.accompanist:accompanist-coil:${Version.AppConfig.Android.ACCOMPANIST}"
+            private const val SWIPE_REFRESH =
+                "com.google.accompanist:accompanist-swiperefresh:${Version.AppConfig.Android.ACCOMPANIST}"
+
+            val list = arrayListOf<String>().apply {
+                add(INSETS)
+                add(COIL)
+                add(SWIPE_REFRESH)
+            }
+        }
+
         val list = arrayListOf<String>().apply {
             add(MATERIAL)
+            addAll(Accompanist.list)
         }
     }
 

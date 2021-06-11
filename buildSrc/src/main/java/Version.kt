@@ -8,7 +8,7 @@ object Version {
 
     object AppConfig {
         object Base {
-            const val APP_ID = "com.darklabs.basecompose"
+            const val APP_ID = "com.darklabs.jetnotes"
             const val COMPILE_SDK = 30
             const val MIN_SDK = 21
             const val TARGET_SDK = 30
@@ -22,13 +22,17 @@ object Version {
             const val ACTIVITY_COMPOSE = "1.3.0-beta01"
             const val CORE = "1.5.0"
             const val APP_COMPAT = "1.3.0"
+            const val ANDROIDX_HILT_COMPILER = "1.0.0"
             const val LIFECYCLE_KTX = "2.3.1"
+            const val NAVIGATION_COMPOSE = "2.4.0-alpha02"
+            const val HILT_NAVIGATION_COMPOSE = "1.0.0-alpha02"
             const val MATERIAL = "1.3.0"
             const val COROUTINES = "1.5.0"
             const val RETROFIT = "2.9.0"
             const val LOGGING = "5.0.0-alpha.2"
             const val KOTLINX_SERIALIZATION = "0.8.0"
             const val KOTLINX_JSON = "1.2.1"
+            const val ACCOMPANIST = "0.11.1"
         }
 
 
