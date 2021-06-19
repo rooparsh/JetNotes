@@ -1,4 +1,4 @@
-package com.darklabs.basecompose.di.module
+package com.darklabs.domain.di.module
 
 import com.darklabs.data.repository.JokeRepository
 import com.darklabs.data.repository.NotesRepository

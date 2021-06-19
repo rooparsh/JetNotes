@@ -2,8 +2,8 @@
 This project will server as Base Project (template) for setting up android app.
 
 <div align="left">
-    <a href = "https://developer.android.com/jetpack/androidx/versions/all-channel#may_5_2021">
-        <img src = "https://img.shields.io/badge/Jetpack%20Compose-1.0.0%20beta08-brightgreen" />
+    <a href = "https://developer.android.com/jetpack/androidx/versions/all-channel#june_16_2021">
+        <img src = "https://img.shields.io/badge/Jetpack%20Compose-1.0.0%20beta09-brightgreen" />
     </a>
 </div>
 <br>
@@ -16,16 +16,24 @@ This project will server as Base Project (template) for setting up android app.
 # Architecture
 <br>
 
+## :camera_flash: Screenshots
+
+<!-- You can add more screenshots here if you like -->
+<img src="/screenshots/ss_1.png" width="260">&emsp;<img src="/screenshots/ss_2.png"
+width="260">&emsp;<img src="/screenshots/ss_3.png" width="260">&emsp;<img src="/screenshots/ss_4.png" width="260">
+<br>
+
 ## 🏗️️ Built with
 
-| What            | How                        |
-|----------------	|------------------------------	|
-| 🎭 User Interface (Android)   | [Jetpack Compose](https://developer.android.com/jetpack/compose)                |
-| 🏗 Architecture    | [Clean](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)                            |
-| 💉 DI (Android)                | [Hilt](https://developer.android.com/training/dependency-injection/hilt-android)                        |
-| 🌊 Async            | [Coroutines](https://kotlinlang.org/docs/coroutines-overview.html) + [Flow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-flow/)                |
-| 🌐 Networking        | [Retrofit](https://square.github.io/retrofit/)                        |
-| 📄 Parsing            | [KotlinX](https://kotlinlang.org/docs/serialization.html)                            |
+| What                        | How                                                                                                                                                                             |
+|:----------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 🎭 User Interface (Android) | [Jetpack Compose](https://developer.android.com/jetpack/compose)                                                                                                                |
+| 🏗 Architecture             | [Clean](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)                                                                                           |
+| 💉 DI (Android)             | [Hilt](https://developer.android.com/training/dependency-injection/hilt-android)                                                                                                |
+| 🌊 Async                    | [Coroutines](https://kotlinlang.org/docs/coroutines-overview.html) + [Flow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-flow/) |
+| 🌐 Networking               | [Retrofit](https://square.github.io/retrofit/)                                                                                                                                  |
+| 📄 Parsing                  | [KotlinX](https://kotlinlang.org/docs/serialization.html)                                                                                                                       |
+| 🌅 Image Loading            | [Accompanist Coil](https://google.github.io/accompanist/coil/)                                                                                                                  |
 
 👤 **rooparsh**
 

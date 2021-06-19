@@ -18,8 +18,8 @@ object Version {
         }
 
         object Android {
-            const val COMPOSE = "1.0.0-beta08"
-            const val ACTIVITY_COMPOSE = "1.3.0-beta01"
+            const val COMPOSE = "1.0.0-beta09"
+            const val ACTIVITY_COMPOSE = "1.3.0-beta02"
             const val CORE = "1.5.0"
             const val APP_COMPAT = "1.3.0"
             const val ANDROIDX_HILT_COMPILER = "1.0.0"
@@ -32,7 +32,7 @@ object Version {
             const val LOGGING = "5.0.0-alpha.2"
             const val KOTLINX_SERIALIZATION = "0.8.0"
             const val KOTLINX_JSON = "1.2.1"
-            const val ACCOMPANIST = "0.11.1"
+            const val ACCOMPANIST = "0.12.0"
         }
 
 
