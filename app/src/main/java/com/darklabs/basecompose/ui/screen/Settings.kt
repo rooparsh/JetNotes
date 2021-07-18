@@ -6,10 +6,8 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
-import com.darklabs.basecompose.BaseApplication
 
 @Composable
 fun SettingsScreen(modifier: Modifier = Modifier, navController: NavHostController) {

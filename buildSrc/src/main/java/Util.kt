@@ -1,7 +1,8 @@
-import org.gradle.api.artifacts.ProjectDependency
 import org.gradle.api.artifacts.dsl.DependencyHandler
 import org.gradle.api.initialization.dsl.ScriptHandler
-import org.gradle.internal.impldep.org.apache.maven.model.Dependency
+import org.gradle.kotlin.dsl.PluginDependenciesSpecScope
+import org.gradle.kotlin.dsl.version
+import org.gradle.plugin.use.PluginDependencySpec
 
 fun DependencyHandler.kapt(list: List<String>) {
     list.forEach { dependency ->
@@ -36,5 +37,11 @@ fun DependencyHandler.api(list: List<String>) {
 fun DependencyHandler.classPath(list: List<String>) {
     list.forEach { dependency ->
         add(ScriptHandler.CLASSPATH_CONFIGURATION, dependency)
+    }
+}
+
+fun PluginDependenciesSpecScope.id(list: List<String>) {
+    list.forEach { dependency ->
+        id(dependency)
     }
 }
