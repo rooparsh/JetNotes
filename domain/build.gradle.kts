@@ -18,6 +18,7 @@ android {
 
 dependencies {
     api(project(":data"))
+    api(project(":multimodule"))
     implementation(DependencyManager.domainLibraries)
     kapt(DependencyManager.compilerLibraries)
 }

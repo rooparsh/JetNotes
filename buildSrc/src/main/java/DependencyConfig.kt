@@ -8,6 +8,7 @@ object DependencyConfig {
         const val ANDROID_HILT = "dagger.hilt.android.plugin"
         const val KOTLINX_SERIALIZATION = "kotlinx-serialization"
         const val KOTLIN_PARCELIZE = "kotlin-parcelize"
+        const val KOTLIN_MULTIPLATFORM = "kotlin-multiplatform"
     }
 
     object Compose {

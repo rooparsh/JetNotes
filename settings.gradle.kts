@@ -1,10 +1,10 @@
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
+        gradlePluginPortal()
         jcenter() // Warning: this repository is going to shut down soon
     }
 }
 rootProject.name = "JetNotes"
-include(":app", ":data", ":domain")
+include(":androidApp", ":data", ":domain", ":multimodule")
