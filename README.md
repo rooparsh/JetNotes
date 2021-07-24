@@ -1,9 +1,9 @@
 # ComposeBaseApplication
-This project will server as Base Project (template) for setting up android app.
+This project will serve as Base Project (template) for setting up android app.
 
 <div align="left">
     <a href = "https://developer.android.com/jetpack/androidx/versions/all-channel#june_16_2021">
-        <img src = "https://img.shields.io/badge/Jetpack%20Compose-1.0.0%20beta09-brightgreen" />
+        <img src = "https://img.shields.io/badge/Jetpack%20Compose-1.0.0%20rc02-brightgreen" />
     </a>
 </div>
 <br>

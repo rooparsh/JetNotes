@@ -1,7 +1,7 @@
 object Version {
 
     object Project {
-        const val GRADLE_TOOLS = "7.1.0-alpha03"
+        const val GRADLE_TOOLS = "7.1.0-alpha04"
         const val KOTLIN_GRADLE = "1.5.10"
         const val DAGGER_HILT = "2.36"
     }
@@ -33,6 +33,10 @@ object Version {
             const val KOTLINX_SERIALIZATION = "0.8.0"
             const val KOTLINX_JSON = "1.2.2"
             const val ACCOMPANIST = "0.14.0"
+        }
+
+        object Multiplatform {
+            const val KTOR = "1.6.1"
         }
 
 

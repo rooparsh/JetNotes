@@ -155,4 +155,34 @@ object DependencyConfig {
         }
 
     }
+
+    object Multiplatform {
+        object Common {
+            private const val KTOR =
+                "io.ktor:ktor-client-core:${Version.AppConfig.Multiplatform.KTOR}"
+
+            val list = arrayListOf<String>().apply {
+                add(KTOR)
+            }
+
+        }
+
+        object Android {
+            private const val KTOR =
+                "io.ktor:ktor-client-android:${Version.AppConfig.Multiplatform.KTOR}"
+
+            val list = arrayListOf<String>().apply {
+                add(KTOR)
+            }
+        }
+
+        object Ios {
+            private const val KTOR =
+                "io.ktor:ktor-client-ios:${Version.AppConfig.Multiplatform.KTOR}"
+
+            val list = arrayListOf<String>().apply {
+                add(KTOR)
+            }
+        }
+    }
 }

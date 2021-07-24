@@ -1,8 +1,6 @@
 import org.gradle.api.artifacts.dsl.DependencyHandler
 import org.gradle.api.initialization.dsl.ScriptHandler
 import org.gradle.kotlin.dsl.PluginDependenciesSpecScope
-import org.gradle.kotlin.dsl.version
-import org.gradle.plugin.use.PluginDependencySpec
 
 fun DependencyHandler.kapt(list: List<String>) {
     list.forEach { dependency ->

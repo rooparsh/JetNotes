@@ -29,4 +29,10 @@ object DependencyManager {
         addAll(DependencyConfig.Async.list)
         addAll(DependencyConfig.Google.Di.list)
     }
+
+    object Multiplatform {
+        val commonLibraries = DependencyConfig.Multiplatform.Common.list
+        val androidLibraries = DependencyConfig.Multiplatform.Android.list
+        val iosLibraries = DependencyConfig.Multiplatform.Ios.list
+    }
 }
