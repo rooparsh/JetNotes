@@ -1,4 +1,4 @@
-package com.darklabs.data
+package com.darklabs.multimoduledata
 
 import platform.UIKit.UIDevice
 

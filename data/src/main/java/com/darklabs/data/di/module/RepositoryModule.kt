@@ -11,14 +11,6 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
-/*@Module
-abstract class RepositoryModule {
-
-    @Binds
-    abstract fun bindJokeRepository(remoteJokeSource: RemoteJokeSource): JokeRepository
-
-}*/
-
 @Module
 @InstallIn(SingletonComponent::class)
 object RepositoryModule {

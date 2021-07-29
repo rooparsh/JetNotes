@@ -30,7 +30,6 @@ import com.google.accompanist.swiperefresh.SwipeRefreshIndicator
 import com.google.accompanist.swiperefresh.rememberSwipeRefreshState
 import kotlinx.coroutines.launch
 
-@ExperimentalFoundationApi
 @Composable
 fun NotesApp(
     modifier: Modifier = Modifier,

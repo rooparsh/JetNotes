@@ -1,6 +1,5 @@
 package com.darklabs.basecompose.ui.navigation
 
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
@@ -12,18 +11,6 @@ import com.darklabs.basecompose.ui.screen.NotesApp
 import com.darklabs.basecompose.ui.screen.SettingsScreen
 import com.google.accompanist.insets.systemBarsPadding
 
-sealed class Screens(val id: String) {
-    object NotesList : Screens("NotesList")
-    object Reminders : Screens("Reminders")
-    object CreateNote : Screens("CreateNote")
-    object CreateLabel : Screens("CreateLabel")
-    object Settings : Screens("Settings")
-    object Help : Screens("Help")
-    object Archive : Screens("Archive")
-    object Deleted : Screens("Deleted")
-}
-
-@ExperimentalFoundationApi
 @Composable
 fun NavigationController(
     modifier: Modifier = Modifier,

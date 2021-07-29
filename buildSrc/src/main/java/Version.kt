@@ -3,7 +3,7 @@ object Version {
     object Project {
         const val GRADLE_TOOLS = "7.1.0-alpha04"
         const val KOTLIN_GRADLE = "1.5.10"
-        const val DAGGER_HILT = "2.36"
+        const val DAGGER_HILT = "2.38.1"
     }
 
     object AppConfig {
@@ -18,8 +18,8 @@ object Version {
         }
 
         object Android {
-            const val COMPOSE = "1.0.0-rc02"
-            const val ACTIVITY_COMPOSE = "1.3.0-rc02"
+            const val COMPOSE = "1.0.0"
+            const val ACTIVITY_COMPOSE = "1.3.0"
             const val CORE = "1.5.0"
             const val APP_COMPAT = "1.3.0"
             const val ANDROIDX_HILT_COMPILER = "1.0.0"

@@ -1,5 +1,6 @@
 package com.darklabs.basecompose.di.module
 
+import com.darklabs.basecompose.util.CoroutineDispatcherProvider
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -10,20 +11,13 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-object DispatcherModule : CoroutineDispatcherProvider {
-
+class AppModule {
     @Provides
     @Singleton
-    override fun io(): CoroutineDispatcher {
-        return Dispatchers.IO
+    internal fun provideSchedulers(): CoroutineDispatcherProvider {
+        return object : CoroutineDispatcherProvider {
+            override fun io(): CoroutineDispatcher = Dispatchers.IO
+            override fun main(): CoroutineDispatcher = Dispatchers.Main
+        }
     }
-
-    override fun main(): CoroutineDispatcher {
-        return Dispatchers.Main
-    }
-}
-
-interface CoroutineDispatcherProvider {
-    fun io(): CoroutineDispatcher
-    fun main(): CoroutineDispatcher
 }
