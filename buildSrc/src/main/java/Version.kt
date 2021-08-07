@@ -1,8 +1,8 @@
 object Version {
 
     object Project {
-        const val GRADLE_TOOLS = "7.1.0-alpha04"
-        const val KOTLIN_GRADLE = "1.5.10"
+        const val GRADLE_TOOLS = "7.1.0-alpha06"
+        const val KOTLIN_GRADLE = "1.5.21"
         const val DAGGER_HILT = "2.38.1"
     }
 
@@ -18,7 +18,7 @@ object Version {
         }
 
         object Android {
-            const val COMPOSE = "1.0.0"
+            const val COMPOSE = "1.0.1"
             const val ACTIVITY_COMPOSE = "1.3.0"
             const val CORE = "1.5.0"
             const val APP_COMPAT = "1.3.0"
@@ -32,7 +32,8 @@ object Version {
             const val LOGGING = "5.0.0-alpha.2"
             const val KOTLINX_SERIALIZATION = "0.8.0"
             const val KOTLINX_JSON = "1.2.2"
-            const val ACCOMPANIST = "0.14.0"
+            const val ACCOMPANIST = "0.16.0"
+            const val COIL = "1.3.2"
         }
 
         object Multiplatform {

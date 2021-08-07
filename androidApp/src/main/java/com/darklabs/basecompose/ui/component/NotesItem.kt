@@ -19,8 +19,8 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import coil.compose.rememberImagePainter
 import com.darklabs.domain.model.Note
-import com.google.accompanist.coil.rememberCoilPainter
 
 @Composable
 fun NotesItemGrid(modifier: Modifier = Modifier, note: Note, onClick: () -> Unit) {
@@ -41,9 +41,9 @@ fun NotesItemGrid(modifier: Modifier = Modifier, note: Note, onClick: () -> Unit
 
             note.imageUrl?.let { imageUrl ->
                 Image(
-                    painter = rememberCoilPainter(
-                        request = imageUrl,
-                        fadeIn = true
+                    painter = rememberImagePainter(
+                        data = imageUrl,
+                        builder = { crossfade(true) }
                     ),
                     contentDescription = null
                 )
@@ -104,9 +104,9 @@ fun NotesItemList(modifier: Modifier = Modifier, note: Note, onClick: () -> Unit
             Divider()
             note.imageUrl?.let { imageUrl ->
                 Image(
-                    painter = rememberCoilPainter(
-                        request = imageUrl,
-                        fadeIn = true
+                    painter = rememberImagePainter(
+                        data = imageUrl,
+                        builder = { crossfade(true) }
                     ),
                     modifier = Modifier.fillMaxWidth(),
                     contentScale = ContentScale.Crop,

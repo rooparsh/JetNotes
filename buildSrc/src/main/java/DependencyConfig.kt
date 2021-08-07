@@ -79,15 +79,15 @@ object DependencyConfig {
         object Accompanist {
             private const val INSETS =
                 "com.google.accompanist:accompanist-insets:${Version.AppConfig.Android.ACCOMPANIST}"
-            private const val COIL =
-                "com.google.accompanist:accompanist-coil:${Version.AppConfig.Android.ACCOMPANIST}"
             private const val SWIPE_REFRESH =
                 "com.google.accompanist:accompanist-swiperefresh:${Version.AppConfig.Android.ACCOMPANIST}"
+            private const val NAVIGATION_ANIMATION =
+                "com.google.accompanist:accompanist-navigation-animation:${Version.AppConfig.Android.ACCOMPANIST}"
 
             val list = arrayListOf<String>().apply {
                 add(INSETS)
-                add(COIL)
                 add(SWIPE_REFRESH)
+                add(NAVIGATION_ANIMATION)
             }
         }
 
@@ -107,6 +107,14 @@ object DependencyConfig {
         val list = arrayListOf<String>().apply {
             add(COROUTINES)
             add(COROUTINES_ANDROID)
+        }
+    }
+
+    object ImageLoading {
+        private const val COIL = "io.coil-kt:coil-compose:${Version.AppConfig.Android.COIL}"
+
+        val list = arrayListOf<String>().apply {
+            add(COIL)
         }
     }
 

@@ -10,9 +10,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavController
+import coil.compose.rememberImagePainter
 import com.darklabs.basecompose.ui.theme.graySurface
 import com.darklabs.domain.model.Note
-import com.google.accompanist.coil.rememberCoilPainter
 
 @Composable
 fun AddEditNoteScreen(
@@ -29,9 +29,9 @@ fun AddEditNoteScreen(
         Column {
             data.imageUrl?.let { imageUrl ->
                 Image(
-                    painter = rememberCoilPainter(
-                        request = imageUrl,
-                        fadeIn = true
+                    painter = rememberImagePainter(
+                        data = imageUrl,
+                        builder = { crossfade(true) }
                     ),
                     contentDescription = null
                 )

@@ -5,6 +5,7 @@ object DependencyManager {
         addAll(DependencyConfig.Android.list)
         addAll(DependencyConfig.Google.list)
         addAll(DependencyConfig.Google.Di.list)
+        addAll(DependencyConfig.ImageLoading.list)
     }
 
     val compilerLibraries = arrayListOf<String>().apply {
