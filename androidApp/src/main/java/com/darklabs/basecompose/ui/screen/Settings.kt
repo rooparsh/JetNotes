@@ -10,7 +10,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 
 @Composable
-fun SettingsScreen(modifier: Modifier = Modifier, navController: NavHostController) {
+fun SettingsScreen(modifier: Modifier = Modifier) {
 
     //val notesApplication = LocalContext.current.applicationContext as NotesApplication
     Scaffold(topBar = {

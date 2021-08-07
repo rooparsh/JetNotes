@@ -17,8 +17,7 @@ import com.darklabs.domain.model.Note
 @Composable
 fun AddEditNoteScreen(
     modifier: Modifier = Modifier,
-    navController: NavController,
-    note: Note = navController.previousBackStackEntry?.arguments?.getParcelable("note") ?: Note()
+    note: Note
 ) {
 
     val (data, setData) = remember { mutableStateOf(note) }
