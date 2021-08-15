@@ -1,7 +1,7 @@
 object Version {
 
     object Project {
-        const val GRADLE_TOOLS = "7.1.0-alpha06"
+        const val GRADLE_TOOLS = "7.1.0-alpha08"
         const val KOTLIN_GRADLE = "1.5.21"
         const val DAGGER_HILT = "2.38.1"
     }
@@ -24,7 +24,7 @@ object Version {
             const val APP_COMPAT = "1.3.0"
             const val ANDROIDX_HILT_COMPILER = "1.0.0"
             const val LIFECYCLE_KTX = "2.3.1"
-            const val NAVIGATION_COMPOSE = "2.4.0-alpha04"
+            const val NAVIGATION_COMPOSE = "2.4.0-alpha06"
             const val HILT_NAVIGATION_COMPOSE = "1.0.0-alpha03"
             const val MATERIAL = "1.5.0-alpha01"
             const val COROUTINES = "1.5.1"

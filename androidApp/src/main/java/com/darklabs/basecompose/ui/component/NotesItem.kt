@@ -19,9 +19,12 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import coil.annotation.ExperimentalCoilApi
 import coil.compose.rememberImagePainter
+import coil.transform.CircleCropTransformation
 import com.darklabs.domain.model.Note
 
+@OptIn(ExperimentalCoilApi::class)
 @Composable
 fun NotesItemGrid(modifier: Modifier = Modifier, note: Note, onClick: () -> Unit) {
     Card(
@@ -83,6 +86,7 @@ fun NotesItemGrid(modifier: Modifier = Modifier, note: Note, onClick: () -> Unit
     }
 }
 
+@OptIn(ExperimentalCoilApi::class)
 @Composable
 fun NotesItemList(modifier: Modifier = Modifier, note: Note, onClick: () -> Unit) {
     Card(
@@ -106,7 +110,10 @@ fun NotesItemList(modifier: Modifier = Modifier, note: Note, onClick: () -> Unit
                 Image(
                     painter = rememberImagePainter(
                         data = imageUrl,
-                        builder = { crossfade(true) }
+                        builder = {
+                            crossfade(true)
+                            transformations(CircleCropTransformation())
+                        }
                     ),
                     modifier = Modifier.fillMaxWidth(),
                     contentScale = ContentScale.Crop,
