@@ -1,7 +1,7 @@
 object Version {
 
     object Project {
-        const val GRADLE_TOOLS = "7.1.0-alpha08"
+        const val GRADLE_TOOLS = "7.1.0-alpha11"
         const val KOTLIN_GRADLE = "1.5.21"
         const val DAGGER_HILT = "2.38.1"
     }
