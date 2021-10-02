@@ -18,7 +18,7 @@ object Version {
         }
 
         object Android {
-            const val COMPOSE = "1.0.1"
+            const val COMPOSE = "1.0.3"
             const val ACTIVITY_COMPOSE = "1.3.0"
             const val CORE = "1.5.0"
             const val APP_COMPAT = "1.3.0"
