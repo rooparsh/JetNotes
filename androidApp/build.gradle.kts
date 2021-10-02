@@ -4,17 +4,12 @@ plugins {
     id(DependencyConfig.Plugin.KOTLIN_KAPT)
     id(DependencyConfig.Plugin.ANDROID_HILT)
     id(DependencyConfig.Plugin.KOTLIN_PARCELIZE)
-    id("scabbard.gradle") version "0.4.0"
 }
 
 subprojects {
     apply {
         from("variants.gradle.kts")
     }
-}
-
-scabbard {
-    enabled = true
 }
 
 android {
